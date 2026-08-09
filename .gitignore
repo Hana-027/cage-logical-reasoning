@@ -1,0 +1,61 @@
+# Claude/local agent settings
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and secrets
+.env
+.env.*
+*.env
+*secret*
+*credentials*
+*.pem
+*.key
+
+# Local / temporary files
+tmp_*
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Data and generated artifacts
+data/raw/
+data/generated/
+proofwriter-dataset-V2020.12.3/
+outputs/
+
+# Large external baselines copied into the workspace
+Logic-LLM/
+SymbCoT/
+
+# Build artifacts
+build/
+dist/
+
+# LaTeX build outputs
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Local scratch artifacts
+accuracy_by_benchmark_with_direct.png
+accuracy_table_with_inferred_direct.csv
+pdf_dataset_snippets.txt

@@ -1,0 +1,13 @@
+seed: 42
+n_examples: 1000
+max_depth: 3
+dataset: auto
+proofwriter_path: null
+counterfactuals_per_example: 4
+output_dir: outputs
+data_dir: data/generated
+llm:
+  provider: anthropic
+  model: claude-opus-4-8
+  max_examples: 100
+  max_tokens: 512

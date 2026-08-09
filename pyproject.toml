@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cf-reasoning"
+version = "0.1.0"
+description = "Counterfactual consistency evaluation for logical reasoning."
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40", "openai>=1.0"]
+hf = ["datasets>=2.18"]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
