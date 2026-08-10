@@ -1,6 +1,6 @@
 # CAGE Logical Reasoning
 
-This repository contains the code and paper source for **Counterfactual Attribution-Guided Repair for Process-Faithful Logical Reasoning in Large Language Models**.
+This repository contains the code for **Counterfactual Attribution-Guided Repair for Process-Faithful Logical Reasoning in Large Language Models**.
 
 - Paper: [OpenReview](https://openreview.net/forum?id=jh5KPtvfdf)
 
@@ -14,14 +14,12 @@ The repository includes:
 - counterfactual generation and evaluation utilities;
 - CAGE conservative and gated repair policies;
 - adapters for Direct, LogicLM-style, SymbCoT-style, and FOLIO runs;
-- tests for loaders, metrics, counterfactuals, repair logic, and LLM parsing;
-- paper figures and LaTeX source.
+- tests for loaders, metrics, counterfactuals, repair logic, and LLM parsing.
 
 ## Repository layout
 
 ```text
 configs/              Default experiment configuration
-report/               Paper source, bibliography, and selected figures
 src/cf_reasoning/     Python package implementation
 tests/                Unit tests
 ```
@@ -127,26 +125,6 @@ Do not commit `.env` files or API keys.
 ## Data
 
 This repository does not include full raw datasets or generated experiment outputs. Place datasets under local paths such as `data/raw/` and pass their locations through CLI arguments, for example `--proofwriter-root`, `--prontoqa-path`, or `--folio-path`.
-
-## Paper artifacts
-
-The paper source is in [`report/`](report/). To rebuild the paper, use a LaTeX distribution with BibTeX support from the `report/` directory:
-
-```bash
-pdflatex neurips2026_cage_draft.tex
-```
-
-```bash
-bibtex neurips2026_cage_draft
-```
-
-```bash
-pdflatex neurips2026_cage_draft.tex
-```
-
-```bash
-pdflatex neurips2026_cage_draft.tex
-```
 
 ## Citation
 
