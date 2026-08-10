@@ -3,7 +3,6 @@
 This repository contains the code and paper source for **Counterfactual Attribution-Guided Repair for Process-Faithful Logical Reasoning in Large Language Models**.
 
 - Paper: [OpenReview](https://openreview.net/forum?id=jh5KPtvfdf)
-- Main LaTeX source: [`report/neurips2026_cage_draft.tex`](report/neurips2026_cage_draft.tex)
 
 ## Overview
 
